@@ -25,6 +25,7 @@ choose_halak_btns.forEach(btn => {
 
 function startGame() {
     setInterval(increaseTime, 1000)
+    audioElement.play();
 }
 
 function increaseTime() {
