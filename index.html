@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Złap Halaka</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Złap Halaka</h1>
+      <button class="btn" id="start-btn">Zagraj w grę</button>
+    </div>
+
+    <div class="screen">
+      <h1>Jaki jest Twój "ulubiony" Halak?</h1>
+      <ul class="halaks-list">
+        <li>
+          <button class="choose-halak-btn">
+            <p>Terminator</p>
+            <img src="assets/halak1.png"
+            alt="terminator">
+          </button>
+        </li>
+        <li>
+          <button class="choose-halak-btn">
+            <p>Król</p>
+            <img
+               src="assets/halak2.png"
+               alt="król"
+               />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Czas: 00:00</h3>
+      <h3 id="score" class="score">Wynik: 0</h3>
+      <h5 id="message" class="message">
+        Czy jesteś już zirytowany? <br>
+      </h5>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
