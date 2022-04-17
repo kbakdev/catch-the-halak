@@ -33,7 +33,7 @@ function increaseTime() {
     let s = seconds % 60
     m = m < 10 ? `0${m}` : m
     s = s < 10 ? `0${s}` : s
-    timeEl.innerHTML = `Time: ${m}:${s}`
+    timeEl.innerHTML = `Czas: ${m}:${s}`
     seconds++
 }
 
@@ -75,5 +75,8 @@ function increaseScore() {
     if(score > 19) {
         message.classList.add('visible')
     }
-    scoreEl.innerHTML = `Score: ${score}`
+    scoreEl.innerHTML = `Wynik: ${score}`
+    if(score === 100) {
+        message.innerHTML = `Wygrałeś! ${timeEl.innerHTML}<br> Zagraj jeszcze raz!<br> Kliknij w przycisk poniżej<br> aby zacząć od nowa<br><button class="btn" id="start-btn" onClick="window.location.reload();">Zagraj jeszcze raz</button>`
+    }
 }
